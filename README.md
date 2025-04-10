@@ -35,7 +35,7 @@ cd CalculadoraIMC
 npm install
 ```
 
-### Execução
+### Execução 1.0
 ```bash
 npx expo start --tunnel
 ```
@@ -46,8 +46,9 @@ npx expo start --tunnel
 - Escaneie o QR code pela própria câmera do celular
 
 ---
+### Execução 1.1
 
-#### Clique [aqui](https://drive.google.com/file/d/1kVHqrEEglsmLbcJw6WRH-7Hwj73zNvCL/view?usp=sharing) para ver a aplicação
+- #### Clique [aqui](https://drive.google.com/file/d/1kVHqrEEglsmLbcJw6WRH-7Hwj73zNvCL/view?usp=sharing) para ver a aplicação
 
 ---
 
