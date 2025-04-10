@@ -59,7 +59,7 @@ const FormIMC = () => {
     } else if (imcCalculado < 40) {
       setClassificacao('Obesidade grau 2');
     } else {
-      setClassificacao('Obesidade grau 3');
+      setClassificacao('Obesidade grau 3 ou mórbida');
     }
   };
 

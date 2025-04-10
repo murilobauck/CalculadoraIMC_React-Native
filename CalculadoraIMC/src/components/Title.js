@@ -10,12 +10,11 @@ const Title = () => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: '320',
     textAlign: 'center',
-    marginBottom: 24,
+    marginTop: 32,
     color: '#2c3e50',
     textShadowColor: 'rgba(0, 0, 0, 0.1)',
-    textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 2,
   },
 });
