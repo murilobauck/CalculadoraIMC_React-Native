@@ -33,8 +33,6 @@ cd CalculadoraIMC
 
 # Instale as dependências
 npm install
-# ou
-yarn install
 ```
 
 ### Execução
