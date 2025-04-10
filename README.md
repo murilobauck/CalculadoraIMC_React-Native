@@ -45,7 +45,9 @@ npx expo start --tunnel
 #### IOS
 - Escaneie o QR code pela própria câmera do celular
 
-##### [Vídeo da aplicação funcionando](https://drive.google.com/file/d/1kVHqrEEglsmLbcJw6WRH-7Hwj73zNvCL/view?usp=sharing) 
+---
+
+#### Clique [aqui](https://drive.google.com/file/d/1kVHqrEEglsmLbcJw6WRH-7Hwj73zNvCL/view?usp=sharing) para ver a aplicação
 
 ---
 
