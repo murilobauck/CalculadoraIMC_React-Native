@@ -54,14 +54,14 @@ npx expo start --tunnel
 
 ## 📊 Tabela de Classificação do IMC
 
-| IMC            |  Classificação     |
-|----------------|--------------------|
-| < 18.5         |  Abaixo do peso    |
-| 18.5 - 24.9    |  Peso normal       |
-| 25 - 29.9      |  Sobrepeso         |
-| 30 - 34.9      |  Obesidade grau 1  |
-| 35 - 39.9      |  Obesidade grau 2  |
-| ≥ 40           |  Obesidade grau 3  |
+| IMC            |  Classificação               |
+|----------------|------------------------------|
+| < 18.5         |  Abaixo do peso              |
+| 18.5 - 24.9    |  Peso normal                 |
+| 25 - 29.9      |  Sobrepeso                   |
+| 30 - 34.9      |  Obesidade grau 1            |
+| 35 - 39.9      |  Obesidade grau 2            |
+| ≥ 40           |  Obesidade grau 3 ou mórbida |
 
 ---
 
