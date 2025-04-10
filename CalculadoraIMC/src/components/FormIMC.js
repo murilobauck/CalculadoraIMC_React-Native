@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import {
+  View,
+  TextInput,
+  Button,
+  StyleSheet,
+  Alert,
+  TouchableWithoutFeedback,
+  Keyboard,
+  ScrollView
+} from 'react-native';
 import Result from './Result';
 
 const FormIMC = () => {
@@ -9,21 +18,26 @@ const FormIMC = () => {
   const [classificacao, setClassificacao] = useState('');
   const [pesoIdeal, setPesoIdeal] = useState({ min: 0, max: 0 });
 
+  // Função para calcular o IMC e classificação
   const calcularIMC = () => {
-    // Validação dos inputs
+
+    // Validação de campos vazios
     if (!peso || !altura) {
       Alert.alert('Erro', 'Por favor, preencha peso e altura');
       return;
     }
 
+    // Conversão de string para número
     const pesoNum = parseFloat(peso);
     const alturaNum = parseFloat(altura);
 
+    // Validação de valores inválidos
     if (isNaN(pesoNum) || isNaN(alturaNum) || alturaNum <= 0 || pesoNum <= 0) {
       Alert.alert('Erro', 'Por favor, insira valores válidos');
       return;
     }
 
+    // Cálculo do IMC
     const alturaMetros = alturaNum / 100;
     const imcCalculado = (pesoNum / (alturaMetros * alturaMetros)).toFixed(2);
     setImc(imcCalculado);
@@ -45,37 +59,48 @@ const FormIMC = () => {
     } else if (imcCalculado < 40) {
       setClassificacao('Obesidade grau 2');
     } else {
-      setClassificacao('Obesidade grau 3 (mórbida)');
+      setClassificacao('Obesidade grau 3');
     }
   };
 
   return (
-    <View style={styles.formContainer}>
-      <TextInput
-        style={styles.input}
-        placeholder="Peso (kg)"
-        keyboardType="numeric"
-        value={peso}
-        onChangeText={setPeso}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Altura (cm)"
-        keyboardType="numeric"
-        value={altura}
-        onChangeText={setAltura}
-      />
-      <Button 
-        title="Calcular IMC" 
-        onPress={calcularIMC} 
-        color="#4a90e2"
-      />
-      {imc && <Result imc={imc} classificacao={classificacao} pesoIdeal={pesoIdeal} />}
-    </View>
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <ScrollView 
+        contentContainerStyle={styles.scrollContainer}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View style={styles.formContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Peso (kg)"
+            keyboardType="numeric"
+            value={peso}
+            onChangeText={setPeso}
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Altura (cm)"
+            keyboardType="numeric"
+            value={altura}
+            onChangeText={setAltura}
+          />
+          <Button 
+            title="Calcular IMC" 
+            onPress={calcularIMC} 
+            color="#4a90e2"
+          />
+          {imc && <Result imc={imc} classificacao={classificacao} pesoIdeal={pesoIdeal} />}
+        </View>
+      </ScrollView>
+    </TouchableWithoutFeedback>
   );
 };
 
 const styles = StyleSheet.create({
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: 'center',
+  },
   formContainer: {
     backgroundColor: '#f0f0f0',
     padding: 20,

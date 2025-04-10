@@ -1,13 +1,16 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Title from './src/components/Title';
 import FormIMC from './src/components/FormIMC';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Title />
-      <FormIMC />
-    </View>
+    // Fecha o teclado quando o usuário toca fora do campo de entrada
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <View style={styles.container}>
+        <Title />
+        <FormIMC />
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
 
