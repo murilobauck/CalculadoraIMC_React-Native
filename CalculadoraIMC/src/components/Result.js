@@ -4,14 +4,13 @@ import { View, Text, StyleSheet } from 'react-native';
 const Result = ({ imc, classificacao, pesoIdeal }) => {
   return (
     <View style={styles.container}>
-
-      // Valor do IMC
+      {/* Valor do IMC */}
       <Text style={styles.result}>Seu IMC: {imc}</Text>
 
-      // Classificação do IMC
+      {/* Classificação do IMC */}
       <Text style={styles.classification}>Classificação: {classificacao}</Text>
 
-      // Peso ideal
+      {/* Peso ideal */}
       <View style={styles.idealWeightContainer}>
         <Text style={styles.idealWeightTitle}>Peso Ideal:</Text>
         <Text style={styles.idealWeight}>Mínimo: {pesoIdeal.min} kg</Text>
