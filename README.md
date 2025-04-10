@@ -45,9 +45,9 @@ npx expo start --tunnel
 #### IOS
 - Escaneie o QR code pela própria câmera do celular
 
+##### [Vídeo da aplicação funcionando](https://drive.google.com/file/d/1kVHqrEEglsmLbcJw6WRH-7Hwj73zNvCL/view?usp=sharing) 
+
 ---
-### Vídeo do código em execução 
-- https://github.com/user-attachments/assets/b88550f7-720b-4812-a882-77213e093199
 
 ## 📊 Tabela de Classificação do IMC
 
