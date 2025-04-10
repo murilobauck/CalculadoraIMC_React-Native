@@ -18,6 +18,9 @@ Uma aplicação de calculo de índice de massa corporal. Abaixo, você encontrar
 - Node.js
 - npm ou yarn
 - Expo CLI instalado globalmente
+```bash
+npm install -g expo-cli
+```
 - **App Expo Go** instalado no seu dispositivo móvel
 
 ### Instalação
