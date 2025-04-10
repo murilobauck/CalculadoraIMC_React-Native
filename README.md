@@ -16,7 +16,7 @@ Uma aplicação de calculo de índice de massa corporal. Abaixo, você encontrar
 
 ### Pré-requisitos
 - Node.js
-- npm ou yarn
+- npm
 - Expo CLI instalado globalmente
 ```bash
 npm install -g expo-cli
