@@ -89,4 +89,4 @@ O código está organizado em três arquivos principais:
 
 Este projeto esta sobe a licença [MIT](https://github.com/murilobauck/ATVDS01/blob/main/LICENSE)
 
-Feito por Murilo Bauck👋🏽 [Entre em contato!](https://www.linkedin.com/in/murilo-bauck-515958306/)
+Feito por Murilo Bauck👋🏽 [Entre em contato!](https://www.linkedin.com/in/murilobauck/)
